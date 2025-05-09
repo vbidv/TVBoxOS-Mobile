@@ -10,4 +10,3 @@
    
 ## 推荐使用   
 [takagen99](https://github.com/takagen99/Box)   
-[FongMi](https://github.com/FongMi/TV)  
