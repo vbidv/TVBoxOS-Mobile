@@ -40,13 +40,7 @@
             android:name=".ui.activity.SplashActivity"
             android:exported="true"
             android:theme="@style/SplashTheme"
-            android:enabled="false"> <!-- 添加这一行，使该 Activity 无法通过 intent-filter 启动 -->
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:enabled="false" />
         <activity
             android:name=".ui.activity.SubscriptionActivity"
             android:configChanges="orientation|screenSize"
@@ -66,7 +60,12 @@
         <activity
             android:name=".ui.activity.MainActivity"
             android:configChanges="orientation|screenSize|keyboardHidden|uiMode"
-            android:exported="true"/>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".ui.activity.LiveActivity"
             android:launchMode="singleTop"
