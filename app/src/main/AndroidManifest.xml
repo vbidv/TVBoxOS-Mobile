@@ -39,7 +39,8 @@
         <activity
             android:name=".ui.activity.SplashActivity"
             android:exported="true"
-            android:theme="@style/SplashTheme">
+            android:theme="@style/SplashTheme"
+            android:enabled="false"> <!-- 添加这一行，使该 Activity 无法通过 intent-filter 启动 -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
